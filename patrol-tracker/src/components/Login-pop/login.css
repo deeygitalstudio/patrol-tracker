@@ -1,0 +1,96 @@
+.login-pop{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #17265d58;
+    display: grid;
+    overflow-y: hidden;
+}
+
+.login-cont{
+    place-self: center;
+    width: max(23vw, 330px);
+    color: #808080;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 30px;
+    border: 8px;
+    font-size: 13px;
+    animation: fade 0.5s;
+}
+
+.loginTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.loginTitle img{
+    width: 14px;
+    cursor: pointer;
+}
+
+.loginInput{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.loginInput label{
+    font-size: 15px;
+    margin: 0!important;
+    padding: 0!important;
+}
+
+.loginInput input{
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.login-cont button{
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: #17265D;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.loginPopCon{
+    display: flex!important;
+    align-items: start!important;
+    margin-top: -15px;
+    
+}
+
+.loginPopCon p{
+  font-size: 10px!important;
+  
+}
+
+.loginPopCon input{
+   margin-top: 5px!important;
+
+
+}
+
+/* .form2{
+    display: none;
+} */
+
+
+.login-pop p span{
+    color: #17265D;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 10px;
+}

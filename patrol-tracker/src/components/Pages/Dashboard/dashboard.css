@@ -1,0 +1,45 @@
+.inps{
+    display: flex;
+    gap: 15px;
+    align-items: end;
+ 
+}
+
+
+ thead tr th{
+    font-size: 6px!important;
+}
+
+.tbod tr td{
+    font-size: 3px;
+    font-weight: 400;
+}
+
+
+.inps label{
+    font-weight: 700;
+    font-size: 9px;
+}
+
+.inps input{
+    width: 300px;
+}
+
+@media screen and (max-width: 767px  ) {
+    .inps input{
+    width: 160px;
+    margin-top: 5px;
+}
+}
+@media screen and (min-width: 768px  ) and (max-width: 1023) {
+    .inps input{
+    width: 250px;
+    margin-top: 5px;
+}
+}
+@media screen and (min-width: 1024px){
+    .inps input{
+    width: 250px;
+    margin-top: 5px;
+}
+}
