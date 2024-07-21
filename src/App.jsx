@@ -8,6 +8,7 @@ import Login from './components/Login-pop/Login'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Dashboard from './components/Pages/Dashboard/Dashboard'
+import Notfound from './components/Pages/Not found/Notfound'
 // import ProtectedRoute from './ProtectedRoute';
 // import Unauthorized from './components/Pages/Unauthorized/Unauthorized'
 
@@ -26,6 +27,7 @@ function App() {
     <Route path='/' element={<Home  setShowLogin={setShowLogin} />} />
     <Route path="/dashboard" element={<Dashboard  />} />
      <Route path='/form' element={<FormDatas />} />
+      <Route path="*" element={<Notfound />} /> {/* Catch-all route */}
     </Routes>
       </div>
    
