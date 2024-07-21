@@ -23,7 +23,11 @@
     .bts{
     display: block;
     width: 100%;
-    margin-top: 50px!important;
+    margin-top: 30px!important;
+}
+
+.--section3{
+    padding: 5rem 0!important;
 }
 
 }

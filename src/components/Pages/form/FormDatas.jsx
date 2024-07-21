@@ -79,6 +79,18 @@ function populateOptions(options) {
         }
 
 
+        const handleMessageSwitch = (event) =>{
+            var selectBox = document.getElementById("kit");
+            var textDiv = document.getElementById("box");
+
+            if (selectBox.value === "Incomplete") {
+                textDiv.style.display = "block";
+            } else {
+                textDiv.style.display = "none";
+            }
+        }
+
+
          const [formData, setFormData] = useState({
     name: "",
     Time: "",
@@ -151,7 +163,7 @@ function populateOptions(options) {
     <div className="container frms mt-5 py-5">
     <div className="title ">
      <h1 className="text-center">Patrol Report</h1>
-     <p className="text-center">This form is to capture the records of zonal assistant patrols especially their locations where they discharge their duties of visiting locations and maintaining Halogen standards amongst Halogen Operatives.</p>
+     <p className="text-center">This form is to capture the patrol of zonal assistants especially where they discharge their duties of visiting locations and maintaining Halogen standards</p>
     </div>
      <div className="">
    
@@ -324,8 +336,9 @@ function populateOptions(options) {
 
            <div className="col-lg-3 mb-3">
   <label className="lab">Kitting Status</label>
-    <select className="form-select" required  onChange={onChangeHandler} name="Kitting_Status" id="kit"  aria-label="Default select example">
-  <option></option>
+    <select className="form-select" required  onChange={(event) => {handleMessageSwitch(event)
+  onChangeHandler(event)}} name="Kitting_Status" id="kit"  aria-label="Default select example">
+  <option>Select</option>
   <option value="Complete">Complete</option>
   <option value="Incomplete">Incomplete</option>
  
