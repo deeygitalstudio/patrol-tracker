@@ -1,6 +1,7 @@
 {
   "name": "patrol-tracker",
   "private": true,
+   "homepage": "https://deeygitalstudio.github.io/patrol-tracker",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
