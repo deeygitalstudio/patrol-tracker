@@ -8,7 +8,7 @@
 
 
 @media screen and (max-width: 600px) {
-    .title h1{
+    .title {
         text-align: center!important;
     }
     p{
