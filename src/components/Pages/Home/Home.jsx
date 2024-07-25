@@ -7,7 +7,7 @@ import { Link, useNavigate } from 'react-router-dom';
 const Home = ({setShowLogin}) => {
   return (
     <section className='--section3'>
-    <div className='container-fluid'>
+    <div className='container'>
     <div className="row --align-center">
     <div className="col-md-5  --flex-dir-column">
       <h1 className='--fw-bold title'>Document your patrol with ease</h1>
