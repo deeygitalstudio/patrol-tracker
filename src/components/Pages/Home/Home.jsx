@@ -6,7 +6,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 const Home = ({setShowLogin}) => {
   return (
-    <section className='--section3'>
+    <section className='--section'>
     <div className='container'>
     <div className="row --align-center">
     <div className="col-md-5  --flex-dir-column">
