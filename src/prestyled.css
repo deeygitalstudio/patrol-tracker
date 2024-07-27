@@ -103,13 +103,13 @@ img{
 
 
 body {
-  font-family: var(--ff-secondary)!important;
+  font-family: var(--ff-secondary);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 1.2rem;
 overflow-y: hidden; 
 -webkit-overflow-scrolling: touch;
-overflow-x: hidden !important;
+overflow-x: hidden;
 }
 
 /* containers */
@@ -117,10 +117,32 @@ overflow-x: hidden !important;
   width: 100%;
   padding: 8rem 0;
 }
+.--section2 {
+  width: 100%;
+  padding: 6rem 0;
+}
+.--section3 {
+  width: 100%;
+  padding: 4rem 0;
+}
 
 .--container {
   max-width: 900px;
-  margin: 0 auto!important;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.--container2 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.--container-email {
+  max-width: 600px;
+  margin: 0 auto;
   padding: 0 20px;
   width: 100%;
 }
@@ -145,7 +167,7 @@ overflow-x: hidden !important;
 .box{
 background-color: var(--color-white);
 border-radius: 5px;
-width: 25rem!important;
+width: 25rem;
 overflow: hidden;
 padding: 20px 15px;
 box-shadow: var(--box-shadow);
@@ -612,7 +634,7 @@ p {
 .--btn {
   font-size: 1.2rem;
   font-weight: 400;
-  padding: 3px 8px;
+  padding: 0.75rem 1.25rem;
   margin: 10px 0;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -624,7 +646,7 @@ p {
 .--btn-pri {
   font-size: 1.2rem;
   font-weight: 400;
-  padding: 3px 8px;
+  padding: 0.75rem 1.25rem;
   margin: 10px 0;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -639,7 +661,7 @@ p {
 .--btn-pri-block {
   font-size: 1.2rem;
   font-weight: 400;
-  padding: 3px 8px;
+  padding: 0.75rem 1.25rem;
   margin: 10px 0;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -648,8 +670,8 @@ p {
   transition: 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   color: #fff;
   background: #007bff;
-    width: 100%;
-    box-shadow: var(--box-shadow);
+  width: 100%;
+  box-shadow: var(--box-shadow);
 }
 
 .--btn-pri:hover {
@@ -666,7 +688,7 @@ p {
 .--btn-sec {
   font-size: 1.2rem;
   font-weight: 400;
-  padding: 3px 8px;
+  padding: 0.75rem 1.25rem;
   margin: 10px 0;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -682,7 +704,7 @@ p {
 .--btn-sec-block {
   font-size: 1.2rem;
   font-weight: 400;
-  padding: 3px 8px;
+  padding: 0.75rem 1.25rem;
   margin: 10px 0;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -709,7 +731,7 @@ p {
 .--btn-success {
   font-size: 1.2rem;
   font-weight: 400;
-  padding: 3px 8px;
+  padding: 0.75rem 1.25rem;
   margin: 10px 0;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -723,7 +745,7 @@ p {
 .--btn-dark {
   font-size: 1.2rem;
   font-weight: 400;
-  padding: 3px 8px;
+  padding: 0.75rem 1.25rem;
   margin: 10px 0;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -737,7 +759,7 @@ p {
 .--btn-dark-block {
   font-size: 1.2rem;
   font-weight: 400;
-  padding: 3px 8px;
+  padding: 0.75rem 1.25rem;
   margin: 10px 0;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -753,7 +775,7 @@ p {
 .--btn-success-block {
   font-size: 1.2rem;
   font-weight: 400;
-  padding: 3px 8px;
+  padding: 0.75rem 1.25rem;
   margin: 10px 0;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -789,7 +811,7 @@ p {
 .--btn-danger {
   font-size: 1.2rem;
   font-weight: 400;
-  padding: 3px 8px;
+  padding: 0.75rem 1.25rem;
   margin: 10px 0;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -804,14 +826,14 @@ p {
 .--btn-danger-block {
   font-size: 1.2rem;
   font-weight: 400;
-  padding: 3px 8px;
+  padding: 0.75rem 1.25rem;
   margin: 10px 0;
   border: 1px solid transparent;
   border-radius: 3px;
   outline: none;
   cursor: pointer;
   transition: 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-   color: #fff;
+  color: #fff;
   background: orangered;
   width: 100%;
   box-shadow: var(--box-shadow);
@@ -911,7 +933,7 @@ p {
 }
 
 label{
-    font-size: 1rem;
+  font-size: 1rem;
   font-weight: 400;
   min-width: 7rem;
   color: rgb(99, 99, 99);
@@ -920,7 +942,7 @@ label{
 input{
   margin: 5px 0;
   border: 1px solid #dcdcdc;
-   font-size: 1.1rem;
+  font-size: 1.1rem;
   font-weight: 300;
   padding: 4px 1rem;
   border-radius: 3px;
@@ -958,21 +980,21 @@ input{
 
 
 .--form-controls .--inp-bor-success{
-border-color: green;
+  border-color: green;
 }
 
 
 .--form-controls .--inp-bor-danger{
-border-color: red;
+   border-color: red;
 }
 
 .--form-controls .--success{
-color: green;
+   color: green;
 }
 
 
 .--form-controls .--error{
-color: red;
+  color: red;
 
 }
 
@@ -1128,7 +1150,7 @@ a:hover {
 }
 
 .--nav .--logo{
-width: 100px;
+   width: 100px;
 
 }
 
@@ -1508,23 +1530,20 @@ flip an image */
 }
 
 
-.--gap5{
-  gap: 5px
+.--gap-1{
+  gap: 1rem;
 }
-.--gap10{
-  gap: 10px
+.--gap-2{
+  gap: 2rem;
 }
-.--gap15{
-  gap: 15px
+.--gap-3{
+  gap: 3rem;
 }
-.--gap20{
-  gap: 20px
+.--gap-4{
+  gap: 4rem;
 }
-.--gap25{
-  gap: 25px
-}
-.--gap30{
-  gap: 30px
+.--gap-5{
+  gap: 5rem
 }
 
 /* Position text in the top-left corner */
