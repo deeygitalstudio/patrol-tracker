@@ -52,7 +52,7 @@ const onChangeHandler = (event) => {
       });
       // Signup successful), handle any additional actions (e.g., redirect)
      
-
+       navigate('/login');
       toast.success('User created successfully');
       
       
@@ -75,7 +75,7 @@ const onChangeHandler = (event) => {
       const user = userCredential.user;
 
       toast.success('User logged in successfully');
-
+      navigate('/login');
       const db = getDatabase();
 
       // Check if the user exists in the 'users' node
