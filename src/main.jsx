@@ -6,15 +6,11 @@ import './index.css'
 import './w3.css'
 
 
-import {BrowserRouter} from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-   <BrowserRouter basename="/patrol-tracker">
-  
-  
-      <App />
- 
-    
-  </BrowserRouter>
+ <HashRouter>
+       <App />
+   </HashRouter>
 )
